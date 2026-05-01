@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    a(href="/") Return to the homepage
+    form(action="/update-cobj" method="POST")
+      label(for="firstname") First Name:
+      input(type="text" name="firstname" id="firstname" required)
+      br
+      label(for="lastname") Last Name:
+      input(type="text" name="lastname" id="lastname")
+      br
+      label(for="company") Company:
+      input(type="text" name="company" id="company")
+      br
+      button(type="submit") Submit
